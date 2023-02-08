@@ -126,6 +126,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Galeria\Fondos\Preguntados.jpg_large" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -137,6 +138,14 @@
     </None>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Galeria\Iconos\Contraseña.png" />
+    <Content Include="Galeria\Iconos\Correo.png" />
+    <Content Include="Galeria\Iconos\FotoPerfil.png" />
+    <Content Include="Galeria\Iconos\OtraFoto.png" />
+    <Content Include="Galeria\Iconos\Telefono.png" />
+    <Content Include="Galeria\Iconos\Usuario.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
