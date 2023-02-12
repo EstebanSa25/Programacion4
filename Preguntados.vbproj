@@ -79,6 +79,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BIBLIOTECA_IMAGEN.vb" />
     <Compile Include="Conexiones.vb" />
     <Compile Include="Procedimientos.vb" />
     <Compile Include="Registro.Designer.vb">
@@ -147,5 +148,6 @@
     <Content Include="Galeria\Iconos\Telefono.png" />
     <Content Include="Galeria\Iconos\Usuario.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
