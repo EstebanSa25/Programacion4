@@ -31,6 +31,7 @@ Partial Class Registro
         Me.Usuario = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Contra = New Guna.UI2.WinForms.Guna2TextBox()
         Me.RegistroButtom = New Guna.UI2.WinForms.Guna2Button()
+        Me.ABRIR = New System.Windows.Forms.OpenFileDialog()
         CType(Me.FotoPerfil, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -121,7 +122,7 @@ Partial Class Registro
         Me.FotoPerfil.Image = CType(resources.GetObject("FotoPerfil.Image"), System.Drawing.Image)
         Me.FotoPerfil.ImageRotate = 0!
         Me.FotoPerfil.InitialImage = CType(resources.GetObject("FotoPerfil.InitialImage"), System.Drawing.Image)
-        Me.FotoPerfil.Location = New System.Drawing.Point(156, 99)
+        Me.FotoPerfil.Location = New System.Drawing.Point(146, 89)
         Me.FotoPerfil.Name = "FotoPerfil"
         Me.FotoPerfil.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.FotoPerfil.Size = New System.Drawing.Size(110, 103)
@@ -197,6 +198,10 @@ Partial Class Registro
         Me.RegistroButtom.TabIndex = 15
         Me.RegistroButtom.Text = "Registrarse"
         '
+        'ABRIR
+        '
+        Me.ABRIR.FileName = "OpenFileDialog1"
+        '
         'Registro
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
@@ -228,4 +233,5 @@ Partial Class Registro
     Friend WithEvents Usuario As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Contra As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents RegistroButtom As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents ABRIR As OpenFileDialog
 End Class
