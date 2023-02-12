@@ -32,7 +32,7 @@ Module BIBLIOTECA_IMAGEN
                     MS.Close()
                     SQL = ""
                 Else
-                    PICTUREBOX.Image = My.Resources
+                    PICTUREBOX.Image = My.Resources.USER
                 End If
             End If
             CONEXION.Close()

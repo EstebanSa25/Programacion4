@@ -147,6 +147,7 @@
     <Content Include="Galeria\Iconos\OtraFoto.png" />
     <Content Include="Galeria\Iconos\Telefono.png" />
     <Content Include="Galeria\Iconos\Usuario.png" />
+    <Content Include="Resources\USER.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
