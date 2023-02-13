@@ -29,6 +29,7 @@ Partial Class PantallaLogin
         Me.IngresarButtom = New Guna.UI2.WinForms.Guna2Button()
         Me.Cerrar = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.RegistroButtom = New Guna.UI2.WinForms.Guna2Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Login
@@ -36,10 +37,10 @@ Partial Class PantallaLogin
         Me.Login.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Login.AvoidGeometryAntialias = True
         Me.Login.BackColor = System.Drawing.Color.Transparent
-        Me.Login.Font = New System.Drawing.Font("Nexa Bold", 19.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Login.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Login.Location = New System.Drawing.Point(137, 197)
         Me.Login.Name = "Login"
-        Me.Login.Size = New System.Drawing.Size(206, 43)
+        Me.Login.Size = New System.Drawing.Size(170, 32)
         Me.Login.TabIndex = 1
         Me.Login.Text = "Iniciar Sesion"
         '
@@ -54,7 +55,7 @@ Partial Class PantallaLogin
         Me.Correo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.Correo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.Correo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Correo.Font = New System.Drawing.Font("Amiko", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Correo.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Correo.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Correo.IconLeft = CType(resources.GetObject("Correo.IconLeft"), System.Drawing.Image)
         Me.Correo.IconLeftSize = New System.Drawing.Size(32, 32)
@@ -80,7 +81,7 @@ Partial Class PantallaLogin
         Me.Contraseña.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.Contraseña.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.Contraseña.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Contraseña.Font = New System.Drawing.Font("Amiko", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Contraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Contraseña.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Contraseña.IconLeft = CType(resources.GetObject("Contraseña.IconLeft"), System.Drawing.Image)
         Me.Contraseña.IconLeftSize = New System.Drawing.Size(32, 32)
@@ -104,7 +105,7 @@ Partial Class PantallaLogin
         Me.IngresarButtom.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.IngresarButtom.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.IngresarButtom.FillColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(119, Byte), Integer))
-        Me.IngresarButtom.Font = New System.Drawing.Font("Amiko", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IngresarButtom.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.IngresarButtom.ForeColor = System.Drawing.Color.White
         Me.IngresarButtom.Location = New System.Drawing.Point(40, 381)
         Me.IngresarButtom.Name = "IngresarButtom"
@@ -121,7 +122,7 @@ Partial Class PantallaLogin
         Me.Cerrar.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.Cerrar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.Cerrar.FillColor = System.Drawing.Color.IndianRed
-        Me.Cerrar.Font = New System.Drawing.Font("28 Days Later", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Cerrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Cerrar.ForeColor = System.Drawing.Color.White
         Me.Cerrar.Location = New System.Drawing.Point(398, 12)
         Me.Cerrar.Name = "Cerrar"
@@ -139,7 +140,7 @@ Partial Class PantallaLogin
         Me.RegistroButtom.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.RegistroButtom.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.RegistroButtom.FillColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(119, Byte), Integer))
-        Me.RegistroButtom.Font = New System.Drawing.Font("Amiko", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RegistroButtom.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RegistroButtom.ForeColor = System.Drawing.Color.White
         Me.RegistroButtom.Location = New System.Drawing.Point(40, 441)
         Me.RegistroButtom.Name = "RegistroButtom"
@@ -147,11 +148,21 @@ Partial Class PantallaLogin
         Me.RegistroButtom.TabIndex = 8
         Me.RegistroButtom.Text = "Registrarse"
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(184, 92)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 9
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'PantallaLogin
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(118, Byte), Integer), CType(CType(215, Byte), Integer), CType(CType(196, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(446, 559)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.RegistroButtom)
         Me.Controls.Add(Me.Cerrar)
         Me.Controls.Add(Me.IngresarButtom)
@@ -173,4 +184,5 @@ Partial Class PantallaLogin
     Friend WithEvents IngresarButtom As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Cerrar As Guna.UI2.WinForms.Guna2CircleButton
     Friend WithEvents RegistroButtom As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Button1 As Button
 End Class
