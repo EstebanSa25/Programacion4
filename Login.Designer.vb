@@ -29,6 +29,7 @@ Partial Class PantallaLogin
         Me.IngresarButtom = New Guna.UI2.WinForms.Guna2Button()
         Me.Cerrar = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.RegistroButtom = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2CircleButton1 = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.SuspendLayout()
         '
         'Login
@@ -39,7 +40,7 @@ Partial Class PantallaLogin
         Me.Login.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Login.Location = New System.Drawing.Point(137, 197)
         Me.Login.Name = "Login"
-        Me.Login.Size = New System.Drawing.Size(170, 32)
+        Me.Login.Size = New System.Drawing.Size(212, 40)
         Me.Login.TabIndex = 1
         Me.Login.Text = "Iniciar Sesion"
         '
@@ -147,11 +148,30 @@ Partial Class PantallaLogin
         Me.RegistroButtom.TabIndex = 8
         Me.RegistroButtom.Text = "Registrarse"
         '
+        'Guna2CircleButton1
+        '
+        Me.Guna2CircleButton1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2CircleButton1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Guna2CircleButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2CircleButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2CircleButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2CircleButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2CircleButton1.FillColor = System.Drawing.Color.IndianRed
+        Me.Guna2CircleButton1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2CircleButton1.ForeColor = System.Drawing.Color.White
+        Me.Guna2CircleButton1.Location = New System.Drawing.Point(356, 12)
+        Me.Guna2CircleButton1.Name = "Guna2CircleButton1"
+        Me.Guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.Guna2CircleButton1.Size = New System.Drawing.Size(36, 34)
+        Me.Guna2CircleButton1.TabIndex = 9
+        Me.Guna2CircleButton1.Text = "X"
+        '
         'PantallaLogin
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(118, Byte), Integer), CType(CType(215, Byte), Integer), CType(CType(196, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(446, 559)
+        Me.Controls.Add(Me.Guna2CircleButton1)
         Me.Controls.Add(Me.RegistroButtom)
         Me.Controls.Add(Me.Cerrar)
         Me.Controls.Add(Me.IngresarButtom)
@@ -173,4 +193,5 @@ Partial Class PantallaLogin
     Friend WithEvents IngresarButtom As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Cerrar As Guna.UI2.WinForms.Guna2CircleButton
     Friend WithEvents RegistroButtom As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2CircleButton1 As Guna.UI2.WinForms.Guna2CircleButton
 End Class
