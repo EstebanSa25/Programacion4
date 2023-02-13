@@ -22,5 +22,6 @@
         End If
         SELECCIONAR_GUARDAR_MOSTRAR_IMAGEN_CIRCULAR(ABRIR, FotoPerfil, "PERSONA", "ID", ID, "FOTO")
         FotoPerfil.Tag = 1
+
     End Sub
 End Class
