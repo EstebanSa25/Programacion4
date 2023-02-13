@@ -13,6 +13,14 @@
         DESCONECTAR()
     End Sub
 
+    Function RETORNAR(ByVal Sql As String) As String
+        DESCONECTAR()
+        CONECTAR()
+        Dim Comando As New OleDb.OleDbCommand(Sql, Db)
+        Comando.ExecuteNonQuery()
+        Return Comando.ExecuteScalar().ToString()
+    End Function
+
     Function PK(ByVal TABLA As String, ByVal ID As String) As Integer
         T.Tables.Clear()
         Sql = "SELECT " & ID & " FROM " & TABLA

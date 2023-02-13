@@ -24,9 +24,9 @@ Partial Class PantallaLogin
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PantallaLogin))
         Me.Login = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Correo = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Contraseña = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.IngresarButtom = New Guna.UI2.WinForms.Guna2Button()
+        Me.txt_Correo = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.txt_Contraseña = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.btn_Ingresar = New Guna.UI2.WinForms.Guna2Button()
         Me.Cerrar = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.RegistroButtom = New Guna.UI2.WinForms.Guna2Button()
         Me.SuspendLayout()
@@ -43,74 +43,74 @@ Partial Class PantallaLogin
         Me.Login.TabIndex = 1
         Me.Login.Text = "Iniciar Sesion"
         '
-        'Correo
+        'txt_Correo
         '
-        Me.Correo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.Correo.BorderRadius = 20
-        Me.Correo.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Correo.DefaultText = ""
-        Me.Correo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Correo.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Correo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Correo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Correo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Correo.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Correo.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Correo.IconLeft = CType(resources.GetObject("Correo.IconLeft"), System.Drawing.Image)
-        Me.Correo.IconLeftSize = New System.Drawing.Size(32, 32)
-        Me.Correo.Location = New System.Drawing.Point(40, 263)
-        Me.Correo.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
-        Me.Correo.MaxLength = 100
-        Me.Correo.Name = "Correo"
-        Me.Correo.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Correo.PlaceholderForeColor = System.Drawing.Color.Gray
-        Me.Correo.PlaceholderText = "Correo electrónico"
-        Me.Correo.SelectedText = ""
-        Me.Correo.Size = New System.Drawing.Size(368, 45)
-        Me.Correo.TabIndex = 2
+        Me.txt_Correo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.txt_Correo.BorderRadius = 20
+        Me.txt_Correo.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txt_Correo.DefaultText = ""
+        Me.txt_Correo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.txt_Correo.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.txt_Correo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txt_Correo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txt_Correo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_Correo.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_Correo.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_Correo.IconLeft = CType(resources.GetObject("txt_Correo.IconLeft"), System.Drawing.Image)
+        Me.txt_Correo.IconLeftSize = New System.Drawing.Size(32, 32)
+        Me.txt_Correo.Location = New System.Drawing.Point(40, 263)
+        Me.txt_Correo.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
+        Me.txt_Correo.MaxLength = 100
+        Me.txt_Correo.Name = "txt_Correo"
+        Me.txt_Correo.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_Correo.PlaceholderForeColor = System.Drawing.Color.Gray
+        Me.txt_Correo.PlaceholderText = "Correo electrónico"
+        Me.txt_Correo.SelectedText = ""
+        Me.txt_Correo.Size = New System.Drawing.Size(368, 45)
+        Me.txt_Correo.TabIndex = 2
         '
-        'Contraseña
+        'txt_Contraseña
         '
-        Me.Contraseña.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.Contraseña.BorderRadius = 20
-        Me.Contraseña.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Contraseña.DefaultText = ""
-        Me.Contraseña.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Contraseña.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Contraseña.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Contraseña.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Contraseña.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Contraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Contraseña.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Contraseña.IconLeft = CType(resources.GetObject("Contraseña.IconLeft"), System.Drawing.Image)
-        Me.Contraseña.IconLeftSize = New System.Drawing.Size(32, 32)
-        Me.Contraseña.Location = New System.Drawing.Point(40, 319)
-        Me.Contraseña.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.Contraseña.MaxLength = 50
-        Me.Contraseña.Name = "Contraseña"
-        Me.Contraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Contraseña.PlaceholderForeColor = System.Drawing.Color.Gray
-        Me.Contraseña.PlaceholderText = "Contraseña"
-        Me.Contraseña.SelectedText = ""
-        Me.Contraseña.Size = New System.Drawing.Size(368, 45)
-        Me.Contraseña.TabIndex = 3
+        Me.txt_Contraseña.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.txt_Contraseña.BorderRadius = 20
+        Me.txt_Contraseña.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txt_Contraseña.DefaultText = ""
+        Me.txt_Contraseña.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.txt_Contraseña.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.txt_Contraseña.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txt_Contraseña.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txt_Contraseña.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_Contraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_Contraseña.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_Contraseña.IconLeft = CType(resources.GetObject("txt_Contraseña.IconLeft"), System.Drawing.Image)
+        Me.txt_Contraseña.IconLeftSize = New System.Drawing.Size(32, 32)
+        Me.txt_Contraseña.Location = New System.Drawing.Point(40, 319)
+        Me.txt_Contraseña.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txt_Contraseña.MaxLength = 50
+        Me.txt_Contraseña.Name = "txt_Contraseña"
+        Me.txt_Contraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_Contraseña.PlaceholderForeColor = System.Drawing.Color.Gray
+        Me.txt_Contraseña.PlaceholderText = "Contraseña"
+        Me.txt_Contraseña.SelectedText = ""
+        Me.txt_Contraseña.Size = New System.Drawing.Size(368, 45)
+        Me.txt_Contraseña.TabIndex = 3
         '
-        'IngresarButtom
+        'btn_Ingresar
         '
-        Me.IngresarButtom.BorderRadius = 20
-        Me.IngresarButtom.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.IngresarButtom.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.IngresarButtom.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.IngresarButtom.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.IngresarButtom.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.IngresarButtom.FillColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(119, Byte), Integer))
-        Me.IngresarButtom.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IngresarButtom.ForeColor = System.Drawing.Color.White
-        Me.IngresarButtom.Location = New System.Drawing.Point(40, 381)
-        Me.IngresarButtom.Name = "IngresarButtom"
-        Me.IngresarButtom.Size = New System.Drawing.Size(368, 45)
-        Me.IngresarButtom.TabIndex = 5
-        Me.IngresarButtom.Text = "Ingresar"
+        Me.btn_Ingresar.BorderRadius = 20
+        Me.btn_Ingresar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btn_Ingresar.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btn_Ingresar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btn_Ingresar.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btn_Ingresar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btn_Ingresar.FillColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(119, Byte), Integer))
+        Me.btn_Ingresar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_Ingresar.ForeColor = System.Drawing.Color.White
+        Me.btn_Ingresar.Location = New System.Drawing.Point(40, 381)
+        Me.btn_Ingresar.Name = "btn_Ingresar"
+        Me.btn_Ingresar.Size = New System.Drawing.Size(368, 45)
+        Me.btn_Ingresar.TabIndex = 5
+        Me.btn_Ingresar.Text = "Ingresar"
         '
         'Cerrar
         '
@@ -154,9 +154,9 @@ Partial Class PantallaLogin
         Me.ClientSize = New System.Drawing.Size(446, 559)
         Me.Controls.Add(Me.RegistroButtom)
         Me.Controls.Add(Me.Cerrar)
-        Me.Controls.Add(Me.IngresarButtom)
-        Me.Controls.Add(Me.Contraseña)
-        Me.Controls.Add(Me.Correo)
+        Me.Controls.Add(Me.btn_Ingresar)
+        Me.Controls.Add(Me.txt_Contraseña)
+        Me.Controls.Add(Me.txt_Correo)
         Me.Controls.Add(Me.Login)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "PantallaLogin"
@@ -168,9 +168,9 @@ Partial Class PantallaLogin
     End Sub
 
     Friend WithEvents Login As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Correo As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents Contraseña As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents IngresarButtom As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents txt_Correo As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents txt_Contraseña As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents btn_Ingresar As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Cerrar As Guna.UI2.WinForms.Guna2CircleButton
     Friend WithEvents RegistroButtom As Guna.UI2.WinForms.Guna2Button
 End Class
