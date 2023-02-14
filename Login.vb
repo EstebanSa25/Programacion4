@@ -26,13 +26,21 @@
             SQL = "declare @retorno bit;exec @retorno=PR_VALIDAR_LOGIN'" & txt_Correo.Text & "','" & txt_Contraseña.Text & "'select 'LOGIN'=@retorno;"
             Dim login As Boolean = RETORNAR(SQL)
             If login.Equals(True) Then
-                MsgBox("Se ingreso al sistema")
+                Popup.Txt_popup.Text = "Se ingreso al sistema"
+                Popup.Show()
+                'MsgBox("Se ingreso al sistema")
             Else
-                MsgBox("Contraseña o correo electronico incorrecto")
+
+                txt_error_login.Text = "Error,verifique los datos"
+                txt_error_login.Location = New Point(82, 136)
+                txt_error_login.Visible = True
             End If
 
         Else
-            MsgBox("Digita un correo electronico valido")
+            txt_error_login.Text = "Digite un correo valido"
+            txt_error_login.Location = New Point(105, 138)
+            txt_error_login.Visible = True
+            'MsgBox("Correo invalido")
         End If
     End Sub
 

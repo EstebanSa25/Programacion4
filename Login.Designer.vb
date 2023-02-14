@@ -29,6 +29,7 @@ Partial Class PantallaLogin
         Me.btn_Ingresar = New Guna.UI2.WinForms.Guna2Button()
         Me.Cerrar = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.RegistroButtom = New Guna.UI2.WinForms.Guna2Button()
+        Me.txt_error_login = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.SuspendLayout()
         '
         'Login
@@ -147,11 +148,28 @@ Partial Class PantallaLogin
         Me.RegistroButtom.TabIndex = 8
         Me.RegistroButtom.Text = "Registrarse"
         '
+        'txt_error_login
+        '
+        Me.txt_error_login.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txt_error_login.AvoidGeometryAntialias = True
+        Me.txt_error_login.BackColor = System.Drawing.Color.Transparent
+        Me.txt_error_login.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_error_login.Location = New System.Drawing.Point(82, 136)
+        Me.txt_error_login.Name = "txt_error_login"
+        Me.txt_error_login.Size = New System.Drawing.Size(113, 33)
+        Me.txt_error_login.TabIndex = 10
+        Me.txt_error_login.Text = "Txt_error"
+        Me.txt_error_login.Visible = False
+        '
         'PantallaLogin
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
+        Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(118, Byte), Integer), CType(CType(215, Byte), Integer), CType(CType(196, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(446, 559)
+        Me.Controls.Add(Me.txt_error_login)
         Me.Controls.Add(Me.RegistroButtom)
         Me.Controls.Add(Me.Cerrar)
         Me.Controls.Add(Me.btn_Ingresar)
@@ -173,4 +191,5 @@ Partial Class PantallaLogin
     Friend WithEvents btn_Ingresar As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Cerrar As Guna.UI2.WinForms.Guna2CircleButton
     Friend WithEvents RegistroButtom As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents txt_error_login As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class

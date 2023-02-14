@@ -81,6 +81,12 @@
   <ItemGroup>
     <Compile Include="BIBLIOTECA_IMAGEN.vb" />
     <Compile Include="Conexiones.vb" />
+    <Compile Include="Popup.Designer.vb">
+      <DependentUpon>Popup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Popup.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Procedimientos.vb" />
     <Compile Include="Registro.Designer.vb">
       <DependentUpon>Registro.vb</DependentUpon>
@@ -122,6 +128,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Popup.resx">
+      <DependentUpon>Popup.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Registro.resx">
       <DependentUpon>Registro.vb</DependentUpon>
     </EmbeddedResource>
@@ -141,6 +150,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Galeria\Iconos\advertencia.png" />
     <Content Include="Galeria\Iconos\Contraseña.png" />
     <Content Include="Galeria\Iconos\Correo.png" />
     <Content Include="Galeria\Iconos\FotoPerfil.png" />
