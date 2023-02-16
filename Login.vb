@@ -26,9 +26,8 @@
             SQL = "declare @retorno bit;exec @retorno=PR_VALIDAR_LOGIN'" & txt_Correo.Text & "','" & txt_Contraseña.Text & "'select 'LOGIN'=@retorno;"
             Dim login As Boolean = RETORNAR(SQL)
             If login.Equals(True) Then
-
-                PAdmin.Show()
-                'MsgBox("Se ingreso al sistema")
+                PantallaAdmin.Show()
+                MsgBox("Se ingreso al sistema")
             Else
 
                 txt_error_login.Text = "Error,verifique los datos"
@@ -46,5 +45,13 @@
 
     Private Sub txt_Contraseña_TextChanged(sender As Object, e As EventArgs) Handles txt_Contraseña.TextChanged
         VALIDACION_CAMPOS()
+    End Sub
+
+    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles ProfsPruebas.Click
+        PantallaAdmin.Show()
+    End Sub
+
+    Private Sub Guna2Button1_Click_1(sender As Object, e As EventArgs) Handles Guna2Button1.Click
+        PantallaEstudiantes.Show()
     End Sub
 End Class

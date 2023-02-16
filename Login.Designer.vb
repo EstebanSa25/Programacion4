@@ -30,6 +30,8 @@ Partial Class PantallaLogin
         Me.Cerrar = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.RegistroButtom = New Guna.UI2.WinForms.Guna2Button()
         Me.txt_error_login = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.ProfsPruebas = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.SuspendLayout()
         '
         'Login
@@ -163,12 +165,48 @@ Partial Class PantallaLogin
         Me.txt_error_login.Text = "Txt_error"
         Me.txt_error_login.Visible = False
         '
+        'ProfsPruebas
+        '
+        Me.ProfsPruebas.BorderRadius = 20
+        Me.ProfsPruebas.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ProfsPruebas.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.ProfsPruebas.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.ProfsPruebas.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.ProfsPruebas.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.ProfsPruebas.FillColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(119, Byte), Integer))
+        Me.ProfsPruebas.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ProfsPruebas.ForeColor = System.Drawing.Color.White
+        Me.ProfsPruebas.Location = New System.Drawing.Point(23, 46)
+        Me.ProfsPruebas.Name = "ProfsPruebas"
+        Me.ProfsPruebas.Size = New System.Drawing.Size(137, 45)
+        Me.ProfsPruebas.TabIndex = 11
+        Me.ProfsPruebas.Text = "Prueba Ing Prog"
+        '
+        'Guna2Button1
+        '
+        Me.Guna2Button1.BorderRadius = 20
+        Me.Guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2Button1.FillColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(119, Byte), Integer))
+        Me.Guna2Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button1.Location = New System.Drawing.Point(224, 46)
+        Me.Guna2Button1.Name = "Guna2Button1"
+        Me.Guna2Button1.Size = New System.Drawing.Size(137, 45)
+        Me.Guna2Button1.TabIndex = 12
+        Me.Guna2Button1.Text = "Prueba Ingt Est"
+        '
         'PantallaLogin
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(118, Byte), Integer), CType(CType(215, Byte), Integer), CType(CType(196, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(446, 559)
+        Me.Controls.Add(Me.Guna2Button1)
+        Me.Controls.Add(Me.ProfsPruebas)
         Me.Controls.Add(Me.txt_error_login)
         Me.Controls.Add(Me.RegistroButtom)
         Me.Controls.Add(Me.Cerrar)
@@ -192,4 +230,6 @@ Partial Class PantallaLogin
     Friend WithEvents Cerrar As Guna.UI2.WinForms.Guna2CircleButton
     Friend WithEvents RegistroButtom As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents txt_error_login As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents ProfsPruebas As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
 End Class

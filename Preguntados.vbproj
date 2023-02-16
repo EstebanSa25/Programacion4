@@ -81,10 +81,22 @@
   <ItemGroup>
     <Compile Include="BIBLIOTECA_IMAGEN.vb" />
     <Compile Include="Conexiones.vb" />
-    <Compile Include="PAdmin.Designer.vb">
-      <DependentUpon>PAdmin.vb</DependentUpon>
+    <Compile Include="My Project\PantallaEstudiantes.Designer.vb">
+      <DependentUpon>PantallaEstudiantes.vb</DependentUpon>
     </Compile>
-    <Compile Include="PAdmin.vb">
+    <Compile Include="My Project\PantallaEstudiantes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaAdmin.Designer.vb">
+      <DependentUpon>PantallaAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaPerfiles.Designer.vb">
+      <DependentUpon>PantallaPerfiles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaPerfiles.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Popup.Designer.vb">
@@ -128,11 +140,20 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="My Project\PantallaEstudiantes.resx">
+      <DependentUpon>PantallaEstudiantes.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaAdmin.resx">
+      <DependentUpon>PantallaAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaPerfiles.resx">
+      <DependentUpon>PantallaPerfiles.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Popup.resx">
       <DependentUpon>Popup.vb</DependentUpon>

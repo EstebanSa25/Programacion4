@@ -1,16 +1,11 @@
-﻿Imports System.IO
-Public Class Registro
-
+﻿Public Class Registro
     Dim NUEVO As Boolean
     Dim ID As Integer
-    Dim Foto As Byte()
 
     Public Sub Validaciones()
-        If Cedula.Text <> "" And Usuario.Text <> "" And Correo.Text <> "" And Contra.Text <> "" And Id_rol.Text <> "" Then
+        If Cedula.Text <> "" And Usuario.Text <> "" And Correo.Text <> "" And Contra.Text <> "" Then
             If IsNumeric((Cedula.Text)) And IsNumeric((Telefono.Text)) Then
                 RegistroButtom.Enabled = True
-            Else
-                RegistroButtom.Enabled = False
             End If
         Else
             RegistroButtom.Enabled = False
@@ -43,18 +38,7 @@ Public Class Registro
     Private Sub RegistroButtom_Click(sender As Object, e As EventArgs) Handles RegistroButtom.Click
         ''Image.Save(MS1, System.Drawing.Imaging.ImageFormat.Jpeg) 'Salvamos el imagen que tenomos cargada en el PictureBox en el MemoryStream.
         ' SQL = "UPDATE " & TABLA & " SET " & CAMPO_IMAGEN & " = (@IMAGEN) WHERE " & CAMPO_ID & " = " & ID
-        Select Case Id_rol.Text
-            Case "Alumno"
-                ID = 1
-            Case "Profesor"
-                ID = 2
-        End Select
-        Try
-
-        Catch ex As Exception
-
-        End Try
-        SQL = "INSERT INTO USUARIO VALUES(" & Cedula.Text & ",'" & Usuario.Text & "','" & Correo.Text & "','" & Contra.Text & "',''," & ID & ")" 'Hay que quitar ese 1 cuando ya haya una accion de guardar rol'
+        SQL = "INSERT INTO USUARIO VALUES(" & Cedula.Text & ",'" & Usuario.Text & "','" & Correo.Text & "','" & Contra.Text & "','','1')" 'Hay que quitar ese 1 cuando ya haya una accion de guardar rol'
         EJECUTAR(SQL)
         '  Popup.Txt_popup.Text = "Se registro los datos correctamente"
         '  Popup.Show()
@@ -77,10 +61,6 @@ Public Class Registro
     End Sub
 
     Private Sub Telefono_TextChanged(sender As Object, e As EventArgs) Handles Telefono.TextChanged
-        Validaciones()
-    End Sub
-
-    Private Sub Id_rol_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Id_rol.SelectedIndexChanged
         Validaciones()
     End Sub
 End Class
