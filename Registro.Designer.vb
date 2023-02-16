@@ -124,7 +124,7 @@ Partial Class Registro
         Me.FotoPerfil.Image = CType(resources.GetObject("FotoPerfil.Image"), System.Drawing.Image)
         Me.FotoPerfil.ImageRotate = 0!
         Me.FotoPerfil.InitialImage = CType(resources.GetObject("FotoPerfil.InitialImage"), System.Drawing.Image)
-        Me.FotoPerfil.Location = New System.Drawing.Point(155, 52)
+        Me.FotoPerfil.Location = New System.Drawing.Point(152, 46)
         Me.FotoPerfil.Name = "FotoPerfil"
         Me.FotoPerfil.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.FotoPerfil.Size = New System.Drawing.Size(110, 103)
