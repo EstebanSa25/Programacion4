@@ -16,7 +16,7 @@
         If Not x = 1 Then x += 1
     End Sub
 
-    Private Sub Guna2PictureBox1_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox1.Click
+    Private Sub Guna2PictureBox1_Click(sender As Object, e As EventArgs)
 
     End Sub
 End Class

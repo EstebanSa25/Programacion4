@@ -28,7 +28,6 @@
             If login.Equals(True) Then
                 Popup.Txt_popup.Text = "Se ingreso al sistema"
                 Popup.Show()
-                PAdmin.Show()
                 'MsgBox("Se ingreso al sistema")
             Else
 

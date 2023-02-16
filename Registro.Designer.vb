@@ -32,6 +32,7 @@ Partial Class Registro
         Me.Contra = New Guna.UI2.WinForms.Guna2TextBox()
         Me.RegistroButtom = New Guna.UI2.WinForms.Guna2Button()
         Me.ABRIR = New System.Windows.Forms.OpenFileDialog()
+        Me.Cedula = New Guna.UI2.WinForms.Guna2TextBox()
         CType(Me.FotoPerfil, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -68,7 +69,7 @@ Partial Class Registro
         Me.Telefono.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Telefono.IconLeft = CType(resources.GetObject("Telefono.IconLeft"), System.Drawing.Image)
         Me.Telefono.IconLeftSize = New System.Drawing.Size(32, 32)
-        Me.Telefono.Location = New System.Drawing.Point(31, 374)
+        Me.Telefono.Location = New System.Drawing.Point(31, 475)
         Me.Telefono.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Telefono.MaxLength = 50
         Me.Telefono.Name = "Telefono"
@@ -94,7 +95,7 @@ Partial Class Registro
         Me.Correo.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Correo.IconLeft = CType(resources.GetObject("Correo.IconLeft"), System.Drawing.Image)
         Me.Correo.IconLeftSize = New System.Drawing.Size(32, 32)
-        Me.Correo.Location = New System.Drawing.Point(31, 265)
+        Me.Correo.Location = New System.Drawing.Point(31, 338)
         Me.Correo.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
         Me.Correo.MaxLength = 100
         Me.Correo.Name = "Correo"
@@ -111,7 +112,7 @@ Partial Class Registro
         Me.Reg.AvoidGeometryAntialias = True
         Me.Reg.BackColor = System.Drawing.Color.Transparent
         Me.Reg.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Reg.Location = New System.Drawing.Point(146, 51)
+        Me.Reg.Location = New System.Drawing.Point(153, 14)
         Me.Reg.Name = "Reg"
         Me.Reg.Size = New System.Drawing.Size(107, 32)
         Me.Reg.TabIndex = 11
@@ -122,7 +123,7 @@ Partial Class Registro
         Me.FotoPerfil.Image = CType(resources.GetObject("FotoPerfil.Image"), System.Drawing.Image)
         Me.FotoPerfil.ImageRotate = 0!
         Me.FotoPerfil.InitialImage = CType(resources.GetObject("FotoPerfil.InitialImage"), System.Drawing.Image)
-        Me.FotoPerfil.Location = New System.Drawing.Point(146, 89)
+        Me.FotoPerfil.Location = New System.Drawing.Point(153, 66)
         Me.FotoPerfil.Name = "FotoPerfil"
         Me.FotoPerfil.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.FotoPerfil.Size = New System.Drawing.Size(110, 103)
@@ -144,7 +145,7 @@ Partial Class Registro
         Me.Usuario.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Usuario.IconLeft = CType(resources.GetObject("Usuario.IconLeft"), System.Drawing.Image)
         Me.Usuario.IconLeftSize = New System.Drawing.Size(32, 32)
-        Me.Usuario.Location = New System.Drawing.Point(31, 209)
+        Me.Usuario.Location = New System.Drawing.Point(31, 267)
         Me.Usuario.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Usuario.MaxLength = 50
         Me.Usuario.Name = "Usuario"
@@ -170,7 +171,7 @@ Partial Class Registro
         Me.Contra.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Contra.IconLeft = CType(resources.GetObject("Contra.IconLeft"), System.Drawing.Image)
         Me.Contra.IconLeftSize = New System.Drawing.Size(32, 32)
-        Me.Contra.Location = New System.Drawing.Point(31, 321)
+        Me.Contra.Location = New System.Drawing.Point(31, 409)
         Me.Contra.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Contra.MaxLength = 50
         Me.Contra.Name = "Contra"
@@ -192,7 +193,7 @@ Partial Class Registro
         Me.RegistroButtom.FillColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(119, Byte), Integer))
         Me.RegistroButtom.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RegistroButtom.ForeColor = System.Drawing.Color.White
-        Me.RegistroButtom.Location = New System.Drawing.Point(31, 426)
+        Me.RegistroButtom.Location = New System.Drawing.Point(31, 541)
         Me.RegistroButtom.Name = "RegistroButtom"
         Me.RegistroButtom.Size = New System.Drawing.Size(368, 45)
         Me.RegistroButtom.TabIndex = 15
@@ -202,11 +203,37 @@ Partial Class Registro
         '
         Me.ABRIR.FileName = "OpenFileDialog1"
         '
+        'Cedula
+        '
+        Me.Cedula.BorderRadius = 20
+        Me.Cedula.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Cedula.DefaultText = ""
+        Me.Cedula.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Cedula.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Cedula.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Cedula.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Cedula.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Cedula.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!)
+        Me.Cedula.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Cedula.IconLeft = CType(resources.GetObject("Cedula.IconLeft"), System.Drawing.Image)
+        Me.Cedula.IconLeftSize = New System.Drawing.Size(32, 32)
+        Me.Cedula.Location = New System.Drawing.Point(31, 201)
+        Me.Cedula.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Cedula.MaxLength = 50
+        Me.Cedula.Name = "Cedula"
+        Me.Cedula.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Cedula.PlaceholderForeColor = System.Drawing.Color.Gray
+        Me.Cedula.PlaceholderText = "Cedula"
+        Me.Cedula.SelectedText = ""
+        Me.Cedula.Size = New System.Drawing.Size(368, 45)
+        Me.Cedula.TabIndex = 16
+        '
         'Registro
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(428, 512)
+        Me.ClientSize = New System.Drawing.Size(428, 621)
+        Me.Controls.Add(Me.Cedula)
         Me.Controls.Add(Me.RegistroButtom)
         Me.Controls.Add(Me.Contra)
         Me.Controls.Add(Me.Usuario)
@@ -234,4 +261,5 @@ Partial Class Registro
     Friend WithEvents Contra As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents RegistroButtom As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents ABRIR As OpenFileDialog
+    Friend WithEvents Cedula As Guna.UI2.WinForms.Guna2TextBox
 End Class
