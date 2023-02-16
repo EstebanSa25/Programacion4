@@ -33,6 +33,7 @@ Partial Class Registro
         Me.RegistroButtom = New Guna.UI2.WinForms.Guna2Button()
         Me.ABRIR = New System.Windows.Forms.OpenFileDialog()
         Me.Cedula = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Id_rol = New Guna.UI2.WinForms.Guna2ComboBox()
         CType(Me.FotoPerfil, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -65,7 +66,7 @@ Partial Class Registro
         Me.Telefono.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.Telefono.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.Telefono.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Telefono.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Telefono.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!)
         Me.Telefono.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Telefono.IconLeft = CType(resources.GetObject("Telefono.IconLeft"), System.Drawing.Image)
         Me.Telefono.IconLeftSize = New System.Drawing.Size(32, 32)
@@ -193,7 +194,7 @@ Partial Class Registro
         Me.RegistroButtom.FillColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(119, Byte), Integer))
         Me.RegistroButtom.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RegistroButtom.ForeColor = System.Drawing.Color.White
-        Me.RegistroButtom.Location = New System.Drawing.Point(31, 426)
+        Me.RegistroButtom.Location = New System.Drawing.Point(31, 495)
         Me.RegistroButtom.Name = "RegistroButtom"
         Me.RegistroButtom.Size = New System.Drawing.Size(368, 45)
         Me.RegistroButtom.TabIndex = 15
@@ -228,11 +229,29 @@ Partial Class Registro
         Me.Cedula.Size = New System.Drawing.Size(368, 45)
         Me.Cedula.TabIndex = 16
         '
+        'Id_rol
+        '
+        Me.Id_rol.BackColor = System.Drawing.Color.Transparent
+        Me.Id_rol.BorderRadius = 15
+        Me.Id_rol.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.Id_rol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Id_rol.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Id_rol.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Id_rol.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.Id_rol.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Id_rol.ItemHeight = 30
+        Me.Id_rol.Items.AddRange(New Object() {"Alumno", "Profesor"})
+        Me.Id_rol.Location = New System.Drawing.Point(31, 435)
+        Me.Id_rol.Name = "Id_rol"
+        Me.Id_rol.Size = New System.Drawing.Size(368, 36)
+        Me.Id_rol.TabIndex = 17
+        '
         'Registro
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(428, 587)
+        Me.Controls.Add(Me.Id_rol)
         Me.Controls.Add(Me.Cedula)
         Me.Controls.Add(Me.RegistroButtom)
         Me.Controls.Add(Me.Contra)
@@ -262,4 +281,5 @@ Partial Class Registro
     Friend WithEvents RegistroButtom As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents ABRIR As OpenFileDialog
     Friend WithEvents Cedula As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Id_rol As Guna.UI2.WinForms.Guna2ComboBox
 End Class
