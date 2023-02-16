@@ -40,7 +40,7 @@ Partial Class PantallaLogin
         Me.Login.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Login.Location = New System.Drawing.Point(137, 197)
         Me.Login.Name = "Login"
-        Me.Login.Size = New System.Drawing.Size(170, 32)
+        Me.Login.Size = New System.Drawing.Size(212, 40)
         Me.Login.TabIndex = 1
         Me.Login.Text = "Iniciar Sesion"
         '
@@ -158,7 +158,7 @@ Partial Class PantallaLogin
         Me.txt_error_login.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt_error_login.Location = New System.Drawing.Point(82, 136)
         Me.txt_error_login.Name = "txt_error_login"
-        Me.txt_error_login.Size = New System.Drawing.Size(113, 33)
+        Me.txt_error_login.Size = New System.Drawing.Size(140, 41)
         Me.txt_error_login.TabIndex = 10
         Me.txt_error_login.Text = "Txt_error"
         Me.txt_error_login.Visible = False
