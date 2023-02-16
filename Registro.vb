@@ -1,6 +1,9 @@
-﻿Public Class Registro
+﻿Imports System.IO
+Public Class Registro
+
     Dim NUEVO As Boolean
     Dim ID As Integer
+    Dim Foto As Byte()
 
     Public Sub Validaciones()
         If Cedula.Text <> "" And Usuario.Text <> "" And Correo.Text <> "" And Contra.Text <> "" And Id_rol.Text <> "" Then
@@ -46,6 +49,11 @@
             Case "Profesor"
                 ID = 2
         End Select
+        Try
+
+        Catch ex As Exception
+
+        End Try
         SQL = "INSERT INTO USUARIO VALUES(" & Cedula.Text & ",'" & Usuario.Text & "','" & Correo.Text & "','" & Contra.Text & "',''," & ID & ")" 'Hay que quitar ese 1 cuando ya haya una accion de guardar rol'
         EJECUTAR(SQL)
         '  Popup.Txt_popup.Text = "Se registro los datos correctamente"
