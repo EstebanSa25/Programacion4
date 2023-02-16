@@ -9,7 +9,16 @@
     Friend Sub EJECUTAR(ByVal Sql As String)
         CONECTAR()
         Dim Comando As New OleDb.OleDbCommand(Sql, Db)
-        Comando.ExecuteNonQuery()
+
+        Try
+
+            Comando.ExecuteNonQuery()
+
+        Catch ex As Exception
+
+            MsgBox(ex.Message)
+
+        End Try
         DESCONECTAR()
     End Sub
 

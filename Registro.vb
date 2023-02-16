@@ -40,6 +40,8 @@
         ' SQL = "UPDATE " & TABLA & " SET " & CAMPO_IMAGEN & " = (@IMAGEN) WHERE " & CAMPO_ID & " = " & ID
         SQL = "INSERT INTO USUARIO VALUES(" & Cedula.Text & ",'" & Usuario.Text & "','" & Correo.Text & "','" & Contra.Text & "','','1')" 'Hay que quitar ese 1 cuando ya haya una accion de guardar rol'
         EJECUTAR(SQL)
+        '  Popup.Txt_popup.Text = "Se registro los datos correctamente"
+        '  Popup.Show()
     End Sub
 
     Private Sub Reg_Click(sender As Object, e As EventArgs) Handles Reg.Click

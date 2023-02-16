@@ -26,8 +26,7 @@
             SQL = "declare @retorno bit;exec @retorno=PR_VALIDAR_LOGIN'" & txt_Correo.Text & "','" & txt_Contraseña.Text & "'select 'LOGIN'=@retorno;"
             Dim login As Boolean = RETORNAR(SQL)
             If login.Equals(True) Then
-                Popup.Txt_popup.Text = "Se ingreso al sistema"
-                Popup.Show()
+
                 PAdmin.Show()
                 'MsgBox("Se ingreso al sistema")
             Else
